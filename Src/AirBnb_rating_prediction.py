@@ -18,8 +18,8 @@ listings = pd.read_csv(listingsDir)
 reviews = pd.read_csv(reviewsDir)
 listings = pd.DataFrame(listings)
 number = 250
-#print(listings['review_scores_rating'].describe())
-#listings['review_scores_rating'].hist(bins=30)
+print(listings['review_scores_rating'].describe())
+listings['review_scores_rating'].hist(bins=30)
 
 listing_reviews = (listings
                   .set_index("id")
